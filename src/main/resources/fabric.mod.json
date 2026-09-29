@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "dungeonscontent1",
+  "version": "${version}",
+  "name": "Dungeons Content",
+  "description": "Minecraft Dungeons 1 content brought to Minecraft",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/dungeonscontent1/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.kiiya.dcontent.client.DungeonsContentDataGenerator"
+    ],
+    "client": [
+      "me.kiiya.dcontent.client.DungeonsContentClient"
+    ],
+    "main": [
+      "me.kiiya.dcontent.DungeonsContent"
+    ]
+  },
+  "mixins": [
+    "dungeonscontent1.mixins.json",
+    {
+      "config": "dungeonscontent1.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
