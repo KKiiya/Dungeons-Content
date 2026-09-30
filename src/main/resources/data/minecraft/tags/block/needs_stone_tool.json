@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "dungeonscontent:tuffite"
+        "dungeonscontent:tuffite",
+        "dungeonscontent:tuffite_pillar"
     ]
 }

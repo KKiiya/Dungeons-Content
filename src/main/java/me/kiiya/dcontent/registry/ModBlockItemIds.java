@@ -12,4 +12,5 @@ public class ModBlockItemIds {
 	}
 
     public static final BlockItemId TUFFITE = create("tuffite");
+    public static final BlockItemId TUFFITE_PILLAR = create("tuffite_pillar");
 }

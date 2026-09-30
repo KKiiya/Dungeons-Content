@@ -12,17 +12,6 @@ import net.minecraft.world.item.ItemStack;
 
 public class ModCreativeModeTabs {
 
-    /*
-    public static final CreativeModeTab TUFFITE_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
-            Identifier.fromNamespaceAndPath(DungeonsContent.MOD_ID, "dungeon_blocks"),
-            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TUFFITE))
-                    .title(Component.translatable("creativemodetab.dungeonscontent.dungeon_blocks"))
-                    .displayItems((parameters, output) -> {
-                        output.accept(ModBlocks.TUFFITE);
-                        // output.accept(ModBlocks.TUFFITE_PILLAR);
-                    }).build());
-    */
-
     public static final ResourceKey<CreativeModeTab> DUNGEONS_CONTENT_TAB_KEY = ResourceKey.create(
 		BuiltInRegistries.CREATIVE_MODE_TAB.key(),
         DungeonsContent.id("creative_tab")
@@ -33,6 +22,7 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("creativemodetab.dungeonscontent.creative_tab"))
             .displayItems((params, output) -> {
                 output.accept(ModBlocks.TUFFITE.asItem());
+                output.accept(ModBlocks.TUFFITE_PILLAR.asItem());
             })
             .build();
 
