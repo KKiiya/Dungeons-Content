@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "dungeonscontent:block/tuffite_pillar_top",
+    "side": "dungeonscontent:block/tuffite_pillar"
+  }
+}

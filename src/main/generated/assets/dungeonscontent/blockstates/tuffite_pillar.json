@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "dungeonscontent:block/tuffite_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "dungeonscontent:block/tuffite_pillar"
+    },
+    "axis=z": {
+      "model": "dungeonscontent:block/tuffite_pillar",
+      "x": 90
+    }
+  }
+}

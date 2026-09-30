@@ -13,12 +13,13 @@ import net.minecraft.world.item.ItemStack;
 public class ModCreativeModeTabs {
 
     
-    public static final CreativeModeTab CUT_POLISHED_ANDESITE_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+    public static final CreativeModeTab TUFFITE_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(DungeonsContent.MOD_ID, "dungeon_blocks"),
-            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CUT_POLISHED_ANDESITE))
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TUFFITE))
                     .title(Component.translatable("creativemodetab.dungeonscontent.dungeon_blocks"))
                     .displayItems((parameters, output) -> {
-                        output.accept(ModBlocks.CUT_POLISHED_ANDESITE);
+                        output.accept(ModBlocks.TUFFITE);
+                        output.accept(ModBlocks.TUFFITE_PILLAR);
                     }).build());
 
     public static void registerModCreativeModeTabs() {
