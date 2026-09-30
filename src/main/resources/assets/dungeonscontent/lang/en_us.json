@@ -1,6 +1,5 @@
 {
-    "creativemodetab.dungeonscontent.dungeon_blocks": "Dungeons Blocks",
-
-    "block.dungeonscontent.tuffite": "Tuffite Block",
-    "block.dungeonscontent.tuffite_pillar": "Tuffite Pillar"
+  "creativemodetab.dungeonscontent.creative_tab": "Dungeons Blocks",
+  "block.dungeonscontent.tuffite": "Tuffite Block",
+  "block.dungeonscontent.tuffite_pillar": "Tuffite Pillar"
 }
