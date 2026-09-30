@@ -89,3 +89,9 @@ nb-configuration.xml
 # VS Code
 .vscode/
 .history/
+
+# Loom/Minecraft run directory
+run/
+
+# Data generation cache
+src/main/generated/.cache/
