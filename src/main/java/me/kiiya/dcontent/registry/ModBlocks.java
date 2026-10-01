@@ -52,6 +52,16 @@ public class ModBlocks {
                                       .strength(1.5F, 6.0F)
     );
 
+    public static final Block WOODEN_CRATE = register(
+        ModBlockItemIds.WOODEN_CRATE, 
+        Block::new,
+        BlockBehaviour.Properties.of()
+                                    .mapColor(MapColor.WOOD)
+                                    .instrument(NoteBlockInstrument.BASS)
+                                    .sound(SoundType.WOOD)
+                                    .strength(2.5F)
+                                    .ignitedByLava());
+
 	private static Block register(ResourceKey<Block> id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
 		// Create the block instance
 		Block block = blockFactory.apply(properties.setId(id));
