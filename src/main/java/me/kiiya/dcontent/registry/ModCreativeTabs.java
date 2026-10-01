@@ -21,6 +21,8 @@ public class ModCreativeTabs {
             .title(Component.translatable("creativemodetab.dungeonscontent.creative_tab"))
             .displayItems((params, output) -> {
                 output.accept(ModBlocks.TUFFITE.asItem());
+                output.accept(ModBlocks.TUFFITE_SLAB.asItem());
+                output.accept(ModBlocks.TUFFITE_STAIRS.asItem());
                 output.accept(ModBlocks.TUFFITE_PILLAR.asItem());
             })
             .build();

@@ -11,7 +11,9 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -26,6 +28,18 @@ public class ModBlocks {
                                       .sound(SoundType.TUFF)
                                       .requiresCorrectToolForDrops()
                                       .strength(1.5F, 6.0F)
+    );
+
+    public static final Block TUFFITE_SLAB = register(
+        ModBlockItemIds.TUFFITE_SLAB,
+        SlabBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(TUFFITE)
+    );
+
+    public static final Block TUFFITE_STAIRS = register(
+        ModBlockItemIds.TUFFITE_STAIRS,
+        properties -> new StairBlock(TUFFITE.defaultBlockState(), properties),
+        BlockBehaviour.Properties.ofFullCopy(TUFFITE)
     );
 
     public static final Block TUFFITE_PILLAR = register(

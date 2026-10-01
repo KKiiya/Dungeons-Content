@@ -13,4 +13,6 @@ public class ModBlockItemIds {
 
     public static final BlockItemId TUFFITE = create("tuffite");
     public static final BlockItemId TUFFITE_PILLAR = create("tuffite_pillar");
+	public static final BlockItemId TUFFITE_SLAB = create("tuffite_slab");
+	public static final BlockItemId TUFFITE_STAIRS = create("tuffite_stairs");
 }
