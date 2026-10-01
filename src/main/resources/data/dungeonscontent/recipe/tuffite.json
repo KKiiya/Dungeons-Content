@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": "minecraft:andesite",
+    "Q": "minecraft:tuff"
+  },
+  "pattern": [
+    "CQ",
+    "QC"
+  ],
+  "result": {
+    "count": 4,
+    "id": "dungeonscontent:tuffite"
+  }
+}

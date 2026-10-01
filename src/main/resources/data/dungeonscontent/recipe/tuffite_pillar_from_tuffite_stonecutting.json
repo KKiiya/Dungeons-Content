@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "dungeonscontent:tuffite",
+  "result": {
+    "id": "dungeonscontent:tuffite_pillar"
+  }
+}

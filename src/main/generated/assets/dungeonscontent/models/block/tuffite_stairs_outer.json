@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "dungeonscontent:block/tuffite",
+    "side": "dungeonscontent:block/tuffite",
+    "top": "dungeonscontent:block/tuffite"
+  }
+}

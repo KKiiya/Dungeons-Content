@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dungeonscontent:block/tuffite_slab"
+    },
+    "type=double": {
+      "model": "dungeonscontent:block/tuffite"
+    },
+    "type=top": {
+      "model": "dungeonscontent:block/tuffite_slab_top"
+    }
+  }
+}
