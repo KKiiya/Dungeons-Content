@@ -1,7 +1,6 @@
-package me.kiiya.dcontent.creativemodtab;
+package me.kiiya.dcontent.registry;
 
 import me.kiiya.dcontent.DungeonsContent;
-import me.kiiya.dcontent.registry.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -10,7 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
-public class ModCreativeModeTabs {
+public class ModCreativeTabs {
 
     public static final ResourceKey<CreativeModeTab> DUNGEONS_CONTENT_TAB_KEY = ResourceKey.create(
 		BuiltInRegistries.CREATIVE_MODE_TAB.key(),
