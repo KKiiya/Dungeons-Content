@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "dungeonscontent:block/wildgrass_block_top",
+    "side": "dungeonscontent:block/wildgrass_block_side",
+    "bottom": "dungeonscontent:block/wildsoil"
+  }
+}

@@ -3,7 +3,8 @@ package me.kiiya.dcontent.registry;
 import java.util.function.Function;
 
 import me.kiiya.dcontent.DungeonsContent;
-import me.kiiya.dcontent.blocks.CrateBlock;
+import me.kiiya.dcontent.blocks.WildGrassBlock;
+import me.kiiya.dcontent.blocks.crate.CrateBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.references.BlockItemId;
@@ -11,6 +12,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.PathBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -72,6 +75,31 @@ public class ModBlocks {
                                     .sound(SoundType.WOOD)
                                     .strength(2.5F)
                                     .ignitedByLava());
+    
+    public static final Block WILDSOIL = register(
+        ModBlockItemIds.WILDSOIL,
+        Block::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+
+    public static final Block WILDGRASS_BLOCK = register(
+        ModBlockItemIds.WILDGRASS_BLOCK,
+        WildGrassBlock::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK).randomTicks());
+
+    public static final Block WILDGRASS_PATH = register(
+        ModBlockItemIds.WILDGRASS_PATH,
+        (p) -> new PathBlock(WILDSOIL, p),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT_PATH));
+    
+    public static final Block WILDSOIL_PATH = register(
+        ModBlockItemIds.WILDSOIL_PATH,
+        (p) -> new PathBlock(WILDSOIL, p),
+        BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT_PATH));
+    
+    public static final Block WILD_PODZOL = register(
+        ModBlockItemIds.WILD_PODZOL,
+        Block::new,
+        BlockBehaviour.Properties.ofFullCopy(Blocks.PODZOL));
 
 	private static Block register(ResourceKey<Block> id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
 		// Create the block instance

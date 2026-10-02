@@ -3,7 +3,7 @@ package me.kiiya.dcontent.registry;
 import java.util.Set;
 
 import me.kiiya.dcontent.DungeonsContent;
-import me.kiiya.dcontent.blocks.CrateBlockEntity;
+import me.kiiya.dcontent.blocks.crate.CrateBlockEntity;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;

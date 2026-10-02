@@ -1,11 +1,19 @@
 {
   "creativemodetab.dungeonscontent.creative_tab": "Dungeons Blocks",
+  
   "block.dungeonscontent.tuffite": "Tuffite Block",
   "block.dungeonscontent.tuffite_slab": "Tuffite Slab",
   "block.dungeonscontent.tuffite_stairs": "Tuffite Stairs",
   "block.dungeonscontent.tuffite_pillar": "Tuffite Pillar",
-  "sound.dungeonscontent.tuffite_dig": "Tuffite digging",
   "block.dungeonscontent.stone_pillar": "Stone Pillar",
   "block.dungeonscontent.crate": "Crate",
-  "container.dungeonscontent.crate": "Crate"
+  "block.dungeonscontent.wildgrass_block": "Wildgrass Block",
+  "block.dungeonscontent.wildgrass_path": "Wildsoil Path",
+  "block.dungeonscontent.wildsoil": "Wildsoil",
+  "block.dungeonscontent.wildsoil_path": "Wildsoil Path",
+  "block.dungeonscontent.wild_podzol": "Wild Podzol",
+
+  "container.dungeonscontent.crate": "Crate",
+  
+  "sound.dungeonscontent.tuffite_dig": "Tuffite digging"
 }

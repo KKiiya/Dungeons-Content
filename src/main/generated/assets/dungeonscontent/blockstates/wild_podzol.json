@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dungeonscontent:block/wild_podzol"
+      },
+      {
+        "model": "dungeonscontent:block/wild_podzol",
+        "y": 90
+      },
+      {
+        "model": "dungeonscontent:block/wild_podzol",
+        "y": 180
+      },
+      {
+        "model": "dungeonscontent:block/wild_podzol",
+        "y": 270
+      }
+    ]
+  }
+}

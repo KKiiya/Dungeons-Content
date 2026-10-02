@@ -26,6 +26,11 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.TUFFITE_PILLAR.asItem());
                 output.accept(ModBlocks.STONE_PILLAR.asItem());
                 output.accept(ModBlocks.CRATE.asItem());
+                output.accept(ModBlocks.WILDGRASS_BLOCK.asItem());
+                output.accept(ModBlocks.WILDSOIL.asItem());
+                output.accept(ModBlocks.WILDGRASS_PATH.asItem());
+                output.accept(ModBlocks.WILDSOIL_PATH.asItem());
+                output.accept(ModBlocks.WILD_PODZOL.asItem());
             })
             .build();
 
