@@ -1,4 +1,4 @@
-package me.kiiya.dcontent.blocks;
+package me.kiiya.dcontent.blocks.crate;
 
 import java.util.List;
 

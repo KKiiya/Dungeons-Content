@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "dungeonscontent:block/wildsoil",
+    "top": "dungeonscontent:block/wild_podzol_top",
+    "side": "dungeonscontent:block/wild_podzol_side"
+  }
+}

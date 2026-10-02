@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dungeonscontent:block/wildgrass_path"
+      },
+      {
+        "model": "dungeonscontent:block/wildgrass_path",
+        "y": 90
+      },
+      {
+        "model": "dungeonscontent:block/wildgrass_path",
+        "y": 180
+      },
+      {
+        "model": "dungeonscontent:block/wildgrass_path",
+        "y": 270
+      }
+    ]
+  }
+}

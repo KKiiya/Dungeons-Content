@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "dungeonscontent:wildgrass_block",
+        "dungeonscontent:wildgrass_path",
+        "dungeonscontent:wildsoil_path",
+        "dungeonscontent:wild_podzol",
+        "dungeonscontent:wildsoil"
+    ]
+}
