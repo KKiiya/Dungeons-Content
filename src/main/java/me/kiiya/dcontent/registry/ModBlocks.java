@@ -3,6 +3,7 @@ package me.kiiya.dcontent.registry;
 import java.util.function.Function;
 
 import me.kiiya.dcontent.DungeonsContent;
+import me.kiiya.dcontent.blocks.CrateBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.references.BlockItemId;
@@ -52,9 +53,9 @@ public class ModBlocks {
                                       .strength(1.5F, 6.0F)
     );
 
-    public static final Block WOODEN_CRATE = register(
-        ModBlockItemIds.WOODEN_CRATE, 
-        Block::new,
+    public static final Block CRATE = register(
+        ModBlockItemIds.CRATE, 
+        CrateBlock::new,
         BlockBehaviour.Properties.of()
                                     .mapColor(MapColor.WOOD)
                                     .instrument(NoteBlockInstrument.BASS)
