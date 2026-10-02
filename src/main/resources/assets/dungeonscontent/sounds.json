@@ -1,0 +1,11 @@
+{
+  "tuffite_dig": {
+    "subtitle": "sound.dungeonscontent.tuffite_dig",
+    "sounds": [
+      "dungeonscontent:block/tuffite_dig1",
+      "dungeonscontent:block/tuffite_dig2",
+      "dungeonscontent:block/tuffite_dig3",
+      "dungeonscontent:block/tuffite_dig4"
+    ]
+  }
+}

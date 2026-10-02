@@ -53,6 +53,16 @@ public class ModBlocks {
                                       .strength(1.5F, 6.0F)
     );
 
+    public static final Block STONE_PILLAR = register(
+		ModBlockItemIds.STONE_PILLAR,
+		RotatedPillarBlock::new,
+		BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
+                                      .instrument(NoteBlockInstrument.BASEDRUM)
+                                      .sound(SoundType.STONE)
+                                      .requiresCorrectToolForDrops()
+                                      .strength(1.5F, 6.0F)
+    );
+  
     public static final Block CRATE = register(
         ModBlockItemIds.CRATE, 
         CrateBlock::new,
@@ -70,7 +80,7 @@ public class ModBlocks {
 		return Registry.register(BuiltInRegistries.BLOCK, id, block);
 	}
 
-    private static Block register(BlockItemId id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
+  private static Block register(BlockItemId id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
 		// Create the block instance
 		Block block = register(id.block(), blockFactory, properties);
 
@@ -81,8 +91,8 @@ public class ModBlocks {
 		return block;
 	}
 
-    public static void initialize() {
-        DungeonsContent.LOGGER.info("Registering Custom Blocks for " + DungeonsContent.MOD_ID);
+  public static void initialize() {
+     DungeonsContent.LOGGER.info("Registering Custom Blocks for " + DungeonsContent.MOD_ID);
 	}
 
 }

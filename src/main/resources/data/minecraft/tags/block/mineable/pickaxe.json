@@ -4,6 +4,7 @@
         "dungeonscontent:tuffite",
         "dungeonscontent:tuffite_slab",
         "dungeonscontent:tuffite_stairs",
-        "dungeonscontent:tuffite_pillar"
+        "dungeonscontent:tuffite_pillar",
+        "dungeonscontent:stone_pillar"
     ]
 }

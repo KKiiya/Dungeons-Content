@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import me.kiiya.dcontent.registry.ModBlockEntityTypes;
 import me.kiiya.dcontent.registry.ModBlocks;
 import me.kiiya.dcontent.registry.ModCreativeTabs;
+import me.kiiya.dcontent.registry.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 
@@ -16,6 +17,7 @@ public class DungeonsContent implements ModInitializer {
     @Override
     public void onInitialize() {
         ModBlocks.initialize();
+        ModSounds.initialize();
         ModBlockEntityTypes.initialize();
         ModCreativeTabs.initialize();
     }
