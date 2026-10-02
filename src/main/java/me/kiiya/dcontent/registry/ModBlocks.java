@@ -80,7 +80,7 @@ public class ModBlocks {
 		return Registry.register(BuiltInRegistries.BLOCK, id, block);
 	}
 
-  private static Block register(BlockItemId id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
+    private static Block register(BlockItemId id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
 		// Create the block instance
 		Block block = register(id.block(), blockFactory, properties);
 
@@ -91,8 +91,8 @@ public class ModBlocks {
 		return block;
 	}
 
-  public static void initialize() {
-     DungeonsContent.LOGGER.info("Registering Custom Blocks for " + DungeonsContent.MOD_ID);
+    public static void initialize() {
+        DungeonsContent.LOGGER.info("Registering Custom Blocks for " + DungeonsContent.MOD_ID);
 	}
 
 }
