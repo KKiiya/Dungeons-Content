@@ -24,6 +24,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.TUFFITE_SLAB.asItem());
                 output.accept(ModBlocks.TUFFITE_STAIRS.asItem());
                 output.accept(ModBlocks.TUFFITE_PILLAR.asItem());
+                output.accept(ModBlocks.STONE_PILLAR.asItem());
             })
             .build();
 

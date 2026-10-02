@@ -52,6 +52,16 @@ public class ModBlocks {
                                       .strength(1.5F, 6.0F)
     );
 
+    public static final Block STONE_PILLAR = register(
+		ModBlockItemIds.STONE_PILLAR,
+		RotatedPillarBlock::new,
+		BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
+                                      .instrument(NoteBlockInstrument.BASEDRUM)
+                                      .sound(SoundType.STONE)
+                                      .requiresCorrectToolForDrops()
+                                      .strength(1.5F, 6.0F)
+    );
+
 	private static Block register(ResourceKey<Block> id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
 		// Create the block instance
 		Block block = blockFactory.apply(properties.setId(id));
