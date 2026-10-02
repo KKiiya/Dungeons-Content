@@ -3,6 +3,7 @@ package me.kiiya.dcontent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import me.kiiya.dcontent.registry.ModBlockEntityTypes;
 import me.kiiya.dcontent.registry.ModBlocks;
 import me.kiiya.dcontent.registry.ModCreativeTabs;
 import me.kiiya.dcontent.registry.ModSounds;
@@ -17,6 +18,7 @@ public class DungeonsContent implements ModInitializer {
     public void onInitialize() {
         ModBlocks.initialize();
         ModSounds.initialize();
+        ModBlockEntityTypes.initialize();
         ModCreativeTabs.initialize();
     }
 

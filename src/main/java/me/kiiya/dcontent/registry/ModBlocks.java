@@ -3,6 +3,7 @@ package me.kiiya.dcontent.registry;
 import java.util.function.Function;
 
 import me.kiiya.dcontent.DungeonsContent;
+import me.kiiya.dcontent.blocks.CrateBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.references.BlockItemId;
@@ -61,6 +62,16 @@ public class ModBlocks {
                                       .requiresCorrectToolForDrops()
                                       .strength(1.5F, 6.0F)
     );
+  
+    public static final Block CRATE = register(
+        ModBlockItemIds.CRATE, 
+        CrateBlock::new,
+        BlockBehaviour.Properties.of()
+                                    .mapColor(MapColor.WOOD)
+                                    .instrument(NoteBlockInstrument.BASS)
+                                    .sound(SoundType.WOOD)
+                                    .strength(2.5F)
+                                    .ignitedByLava());
 
 	private static Block register(ResourceKey<Block> id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
 		// Create the block instance
@@ -69,7 +80,7 @@ public class ModBlocks {
 		return Registry.register(BuiltInRegistries.BLOCK, id, block);
 	}
 
-    private static Block register(BlockItemId id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
+  private static Block register(BlockItemId id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {
 		// Create the block instance
 		Block block = register(id.block(), blockFactory, properties);
 
@@ -80,8 +91,8 @@ public class ModBlocks {
 		return block;
 	}
 
-    public static void initialize() {
-        DungeonsContent.LOGGER.info("Registering Custom Blocks for " + DungeonsContent.MOD_ID);
+  public static void initialize() {
+     DungeonsContent.LOGGER.info("Registering Custom Blocks for " + DungeonsContent.MOD_ID);
 	}
 
 }
